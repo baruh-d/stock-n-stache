@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
   :root {
@@ -153,7 +153,7 @@
   input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--primary);
-    ring: 2px solid var(--primary);
+    box-shadow: 0 0 0 2px var(--primary);
   }
   
   /* Table Styles */
